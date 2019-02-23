@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/jiapingwa-react/static/js/runtime~main.05c7a2e6.js"
   },
   {
-    "revision": "9007e2a2d0dae8985b97",
-    "url": "/jiapingwa-react/static/js/main.9007e2a2.chunk.js"
+    "revision": "e5f848d6d18c27b81b16",
+    "url": "/jiapingwa-react/static/js/main.e5f848d6.chunk.js"
   },
   {
     "revision": "ba1ca5ba3f9c1e3c91ad",
     "url": "/jiapingwa-react/static/js/2.ba1ca5ba.chunk.js"
   },
   {
-    "revision": "9007e2a2d0dae8985b97",
+    "revision": "e5f848d6d18c27b81b16",
     "url": "/jiapingwa-react/static/css/main.11cc23b5.chunk.css"
   },
   {
-    "revision": "f128eca78b880a560741f65975ab51d9",
+    "revision": "68c62ad471a47d47d60aa7fa66701d2b",
     "url": "/jiapingwa-react/index.html"
   }
 ];
