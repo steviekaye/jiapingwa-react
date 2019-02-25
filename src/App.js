@@ -1,6 +1,16 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+}
+from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {bookData} from './bookData.js'
+
+const items = bookData.map((item, key) => < li key = {
+      item.id
+    } > {
+      [item.title, item.year]
+    } < /li>)
 
 class App extends Component {
   render() {
@@ -19,10 +29,12 @@ class App extends Component {
           >
             Learn React
           </a>
+          <ul>{items} </ul>
         </header>
       </div>
     );
-  }
-}
 
-export default App;
+    }
+  }
+
+  export default App;

@@ -1,6 +1,7 @@
-const bookData = {
-  books: [
-    {
+export const bookData = [
+
+
+      {
       id: 1,
       title: 'Happy Dreams',
       year: 2007,
@@ -31,7 +32,7 @@ const bookData = {
       price: 40
     },
     {
-      id: 4
+      id: 4,
       title: 'The Lantern Bearer',
       year: 2013,
       cover: '/images/the_lantern_bearer.jpg',
@@ -41,7 +42,7 @@ const bookData = {
       price: 30
     },
     {
-      id: 5
+      id: 5,
       title: 'Shaanxi Opera',
       year: 2005,
       cover: '/images/shaanxi_opera.jpg',
@@ -51,7 +52,7 @@ const bookData = {
       price: 50
     },
     {
-      id: 6
+      id: 6,
       title: 'Turbulence',
       year: 1987,
       cover: '/images/turbulence.jpg',
@@ -61,7 +62,7 @@ const bookData = {
       price: 25
     },
     {
-      id: 7
+      id: 7,
       title: 'Old Kiln Village',
       year: 2011,
       cover: '/images/old_kiln_village.jpg',
@@ -69,6 +70,6 @@ const bookData = {
       titlePinyin: 'Gu Lu',
       synopsis: "todo",
       price: 45
-    },
+    }
   ]
-}
+export default bookData;
