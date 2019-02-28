@@ -8,24 +8,23 @@ import {bookData} from './bookData.js'
 var books = bookData.sort((a,b) => b.year - a.year);
 
 books = books.map((book) => { return (
-<div className="book">
-<span>
-<img src={book.cover}></img>
-</span>
-<span>
-<div>
-<span className="booktitle">{book.title} </span>
-<span className="bookyear">{book.year} </span>
-</div>
-<div>
-<span className="booktitleCN">{book.titleCN} </span>
-<span className="booktitlePinyin">{book.titlePinyin} </span>
-</div>
-</span>
-</div>
-)
-}
-)
+    <div className="book">
+      <span>
+        <img src={process.env.PUBLIC_URL + book.cover}></img>
+      </span>
+      <span>
+        <div>
+          <span className="booktitle">{book.title} </span>
+          <span className="bookyear">{book.year} </span>
+        </div>
+        <div>
+          <span className="booktitleCN">{book.titleCN} </span>
+          <span className="booktitlePinyin">{book.titlePinyin} </span>
+        </div>
+      </span>
+    </div>
+  )
+})
 
 class App extends Component {
   render() {
@@ -39,6 +38,6 @@ class App extends Component {
     );
 
     }
-  }
+}
 
-  export default App;
+export default App;
