@@ -1,43 +1,23 @@
-import React, {
-  Component
-}
-from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import {bookData} from './bookData.js'
+import Book from './Book.js'
 
-var books = bookData.sort((a,b) => b.year - a.year);
-
-books = books.map((book) => { return (
-    <div className="book">
-      <span>
-        <img src={process.env.PUBLIC_URL + book.cover}></img>
-      </span>
-      <span>
-        <div>
-          <span className="booktitle">{book.title} </span>
-          <span className="bookyear">{book.year} </span>
-        </div>
-        <div>
-          <span className="booktitleCN">{book.titleCN} </span>
-          <span className="booktitlePinyin">{book.titlePinyin} </span>
-        </div>
-      </span>
-    </div>
-  )
-})
 
 class App extends Component {
   render() {
+    const books = bookData.sort((a,b) => b.year - a.year);
+
     return (
       <div className="App">
-        <header className="App-header">
-
-          <div>{books} </div>
-        </header>
+        <div className="bookList">
+          {books.map((book, i) => {
+            return(<Book key={i} bookData={book}/>)
+          })}
+        </div>
       </div>
     );
-
-    }
+  }
 }
 
 export default App;
