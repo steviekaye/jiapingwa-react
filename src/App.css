@@ -1,48 +1,19 @@
-/* .App {
-  text-align: center;
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-body {
-
-  padding: 2em;
-  @media screen and (min-width: $tablet) {
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
     padding: 0.5em;
+    max-width: 60%;
   }
 
-}
-
-.bookList {
-  margin-left: 4em;
+  .book-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .book {
@@ -50,7 +21,9 @@ body {
   flex-direction: row;
   height: 200px;
   padding: 1rem;
-  width: 60%;
+  border: 1px solid #b62d38;
+  border-radius: 15px;
+  margin: 10px;
 }
 
 img {
@@ -58,7 +31,31 @@ img {
   height: 200px;
 }
 
-.bookInfo {
+.book-info {
   margin-left: 1em;
-  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.book-year {
+  font-size: 1.2rem;
+}
+
+.book-title-CN {
+  color: #b62d38;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.book-title-pinyin {
+}
+
+.book-price {
+  margin-top:auto;
 }

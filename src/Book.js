@@ -3,24 +3,20 @@ import React, { Component } from 'react';
 class Book extends Component {
   render() {
     const data = this.props.bookData;
-    
+
     return (
       <div className="book">
         <div>
           <img src={process.env.PUBLIC_URL + data.cover}></img>
         </div>
-        <div className="bookInfo">
+        <div className="book-info">
+          <div className="book-title">{data.title} </div>
+          <div className="book-year">{data.year} </div>
           <div>
-            <span className="booktitle">{data.title} </span>
-            <span className="bookyear">({data.year}) </span>
+            <span className="book-title-CN">{data.titleCN} </span>
+            <span className="book-title-pinyin">({data.titlePinyin}) </span>
           </div>
-          <div>
-            <span className="booktitleCN">{data.titleCN} </span>
-            <span className="booktitlePinyin">({data.titlePinyin}) </span>
-          </div>
-          <div>
-          <span className="bookPrice">Price: ${data.price}</span>
-          </div>
+          <div className="book-price">Price: ${data.price}</div>
         </div>
       </div>
     )

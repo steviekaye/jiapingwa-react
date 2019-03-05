@@ -10,7 +10,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="bookList">
+        <div className="book-list">
           {books.map((book, i) => {
             return(<Book key={i} bookData={book}/>)
           })}
