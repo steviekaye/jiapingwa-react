@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jiapingwa-react/precache-manifest.85cf953ab5f1ffb595c3c2769536cf0c.js"
+  "/jiapingwa-react/precache-manifest.b5725e5d8c5b24b1e5dc9c446bfc78ee.js"
 );
 
 workbox.clientsClaim();
