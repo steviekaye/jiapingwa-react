@@ -1,5 +1,7 @@
 https://steviekaye.github.io/jiapingwa-react/
 
+WIP - putting Redux integration/development on hold for the moment.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
