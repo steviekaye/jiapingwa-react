@@ -7,7 +7,7 @@ class Book extends Component {
     return (
       <div className="book">
         <div>
-          <img src={process.env.PUBLIC_URL + data.cover} alt={bookData.title}></img>
+          <img src={process.env.PUBLIC_URL + data.cover} alt={data.title}></img>
         </div>
         <div className="book-info">
           <div className="book-title">{data.title} </div>
